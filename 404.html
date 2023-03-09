@@ -26,7 +26,7 @@
 
       var l = window.location;
       console.log(l.pathname)
-      var pathSegmentsToKeep = l.pathname.split('/').length > 1 ? 1 : 0;
+      var pathSegmentsToKeep = l.pathname.split('/').length > 2 ? 1 : 0;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
         l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
