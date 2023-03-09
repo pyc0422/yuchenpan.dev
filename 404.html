@@ -27,7 +27,6 @@
       var l = window.location;
       console.log(l)
       if (l.pathname.split('/').length > 2) {
-        console.log('none', temp);
         let temp = '?/' + l.pathname.split('/').slice(1,2) +'/?/' + l.pathname.split('/').slice(2, 3)
         console.log('none', temp);
         l.replace(
