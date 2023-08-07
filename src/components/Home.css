@@ -1,0 +1,188 @@
+
+.page {
+  min-width: 100%;
+  min-height: 100vh;
+  padding-top:10vh;
+  margin:1%;
+}
+
+
+.bref {
+  display:flex;
+  gap:2rem;
+  margin:auto;
+}
+
+.bref-intro {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.vl{
+  border-right:3px solid black
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 4vw;
+  margin: 2% 0;
+}
+
+.separator::before {
+  content:'';
+  flex:0.2;
+  border-bottom: 1px solid #000;
+}
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before {
+  margin-right: .5em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .5em;
+}
+
+/* --------- work -------------- */
+
+#work-session {
+  display:flex;
+  flex-wrap: wrap;
+  /* justify-content: center;
+  align-items: center; */
+  /* grid-template-rows:1fr 1fr;
+  grid-template-columns: 1fr 1fr; */
+}
+.project-item {
+  height:300px;
+  flex:50%;
+  display: flex;
+  gap:1em;
+  pointer-events: auto;
+  margin-top:2%;
+  cursor: pointer;
+  text-decoration: none;
+  color:#000;
+
+}
+a:hover {
+  color:black;
+}
+
+.project-intro > div {
+  margin-top: 2%;
+}
+.project-name,
+.scaled-img,
+img {
+  transition:all 0.5s ;
+  -webkit-transition:all 0.5s ;
+  -o-transition:all 0.5s ;
+  -moz-transition:all 0.5s;
+
+}
+img:hover {
+  -webkit-transform: scale(1.04,1.04);
+  -webkit-transition: all 1s ;
+}
+.scaled-img:hover{
+  -webkit-transform: scale(1.1,1.1);
+  -webkit-transition: all 1s ;
+}
+.project-name:hover{
+  -webkit-transform: scale(1.02,1.02);
+  -webkit-transition: all 1s ;
+}
+
+
+.project-name {
+  font-size: 2.6vw;
+  font-family: "Inknut Antiqua";
+}
+
+.project-img {
+  border-radius: 4%;
+  width: 200px;
+  height: 200px;
+  object-fit:cover;
+  object-position: center;
+}
+.project-intro {
+  min-width:22vw;
+  text-align: left;
+  height:200px;
+}
+.project-intro > .project-bref {
+  text-align: inherit;
+}
+
+
+/* ======== project page ======== */
+
+
+.project{
+  display:flex;
+  width:90%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: inherit;
+}
+
+#btn-group{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin:5%;
+  width:90%;
+}
+
+
+
+/* ---------- footer ------------- */
+
+#footer {
+  position:inherit;
+  text-align:center;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: smaller;
+  bottom: 0;
+  width: 100%;
+  margin-top: 5%
+}
+
+p > div > a:hover{
+  animation-name: buttonhover;
+  animation-duration:4s;
+}
+
+@keyframes buttonhover {
+  0% {width: 40px; height:40px}
+  25% {width:30px; height:30px}
+  50% {width: 40px; height:40px}
+}
+
+
+#projects {
+  margin: 3% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#buttons {
+  width:50%;
+  margin:auto;
+  margin-bottom: 2%;
+  display:inline;
+}

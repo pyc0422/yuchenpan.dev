@@ -1,0 +1,28 @@
+#skills {
+  height:100%;
+  margin:auto;
+  padding-top:15vh;
+  text-align:left;
+
+}
+.skill-container {
+  /* width:28vw; */
+  display:flex;
+  width:90%;
+  height:100%;
+  border:2px solid black;
+  flex-wrap: wrap;
+  border-radius: 2%;
+  justify-content: center;
+}
+.skill-img {
+  width:4em;
+  height:4em;
+  margin:2%
+}
+
+.skill-cat {
+  font-variant: small-caps;
+  margin: 3% 0 0 0;
+  height:2.2em;
+}

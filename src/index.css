@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  background-color: #F8DFDB;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100vh;
+  font-family: 'Lato';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Lato, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+
+}
