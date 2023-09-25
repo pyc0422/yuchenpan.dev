@@ -3,21 +3,20 @@ import projects from './projects.js';
 import biteshare from "../images/biteshare.gif";
 import backend from '../images/backend.jpg';
 import frontend from '../images/frontend-demo.gif'
-
+import doglover from '../images/doglover.jpg'
 
 const bgImgs = {
   'BiteShare':biteshare,
   'Atelier-backend': backend,
   'Atelier-frontend':frontend,
   'mockStockMarket': "https://user-images.githubusercontent.com/86500068/224576379-199ef255-7ae8-4611-aedc-e4ebbc00de8e.GIF",
-  'neway-receipt-project':""
+  'fetch-exercise':doglover
 }
 
 function Work () {
 
   return (
     <>
-
      <div className="separator">
       My work
      </div>
@@ -37,8 +36,6 @@ function Work () {
               <div className="fs-sm-3">{project.position}</div>
             </div>
           </a>
-
-
         )}
         </div>
       </nav>

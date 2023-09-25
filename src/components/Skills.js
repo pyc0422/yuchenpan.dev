@@ -1,19 +1,21 @@
 import './skills.css'
-import docker from '../images/docker.svg';
 import nginx from '../images/nginx.svg';
-import aws from '../images/aws.svg';
+import jest from '../images/jest-color.svg';
+import testing from '../images/testinglibrary-color.svg';
+import tsnode from '../images/tsnode-color.svg';
 import {motion} from 'framer-motion';
 
 const logo_img = {
-  "docker": docker,
   "nginx": nginx,
-  "aws": aws
+  "jest":jest,
+  "testinglibrary":testing,
+  "tsnode":tsnode
 };
 
 const mySkills = {
-  frontend: ["javascript","react","redux", "jquery","html5","css3","materialui","bootstrap", "tailwindcss","vite","nextjs"],
-  backend: ["nodejs", "express", "mongodb", "postgresql", "mysql", "docker","nginx", "firebase"],
-  other:["webpack","babel","sass" ,"aws", "photoshop","premierepro", ]
+  frontend: ["typescript","javascript","react","redux", "nextjs","jquery","html5","css3", "tailwindcss","materialui","bootstrap","vite"],
+  backend: ["nodejs", "tsnode", "express", "mongodb", "postgresql", "mysql", "docker","nginx", "firebase"],
+  other:["webpack","babel" ,"jest","testinglibrary", "aws", "photoshop","premierepro", "git"]
 }
 
 function SkillImg ({skill,img}) {
@@ -47,10 +49,7 @@ function Skills () {
           <h4 className="skill-cat">{key+" skills"}</h4>
           <div className="skill-container">
           {mySkills[key].map((skill, j) => {
-            let img_src;
-            if (skill === 'nginx') {
-              img_src = logo_img[skill]
-            }
+            let img_src = logo_img[skill] || null;
             return ( <SkillImg skill={skill} key={j} img={img_src} />)
             })
           }

@@ -48,7 +48,7 @@ function Home() {
               animate={{opacity:1,x: 0}}
               transition={{ duration: 1.1, delay:0.5 }}
             >
-              Hello, I'm Yuchen (Raina) Pan
+              Hello, I'm Raina Pan
             </motion.h1>
             <motion.div
               initial={{opacity:0, x:'50vw'}}

@@ -3,6 +3,16 @@ import frontendCart from '../images/frontend-cart.gif';
 
 const projects = [
   {
+    name: 'fetch-exercise',
+    showName:'Dog Lover',
+    bref: 'A frontend project dog adopt website for dog lovers',
+    dscribe:'\tDog Lover is a web application that allows users to adopt dogs from over 10000 dogs in our database. \n I built this website individually with TypeScript, Next.js, and TailwindCSS. \nSuccessfully processed 10,000-row API data with intricate filtering conditions for precise content presentation',
+    position:'Front-end Developer',
+    deployed:'https://fetch-dog-lover.vercel.app/',
+    image:[["https://github.com/pyc0422/fetch-exercise/assets/86500068/3c11ce2f-54a2-45f4-aff8-cbad6150c696", 'Demo Video']],
+    tech: ['TypeScript', 'react', 'nextJS', 'tailwindCSS', 'jest', 'testing-library']
+   },
+  {
     name: 'BiteShare',
     describe:"\tBiteShare is a mobile-first web application designed to simplify the process of splitting a bill when dining out with friends. \nWith BiteShare, users can easily create a meal session, invite friends to join, and split the bill in a hassle-free way.\nFriends can also view each other's orders and make comments or reactions to each other's meals.\nThis creates a fun and interactive experience that encourages social interaction and fosters a sense of community.",
     image: [
@@ -11,7 +21,7 @@ const projects = [
       ["https://user-images.githubusercontent.com/86500068/220459477-f4a7e94e-c474-4741-9ec7-9d6fd053dca3.GIF", "Add a new friend"],
       ["https://user-images.githubusercontent.com/86500068/220459463-82a09713-8d95-48b8-bbac-a2f1afaf6bba.GIF", "Swipe to delete a friend"]
     ],
-    tech:['Javascript', 'react', 'MaterialUI', 'nodeJS', 'Express', 'MongoDB'],
+    tech:['Javascript', 'react', 'MaterialUI', 'nodeJS', 'Express', 'MongoDB', 'jest', 'testing-library'],
     bref: "A full-stack mobile first application",
     position:`Full-stack Developer`
    },
@@ -19,7 +29,7 @@ const projects = [
     name: 'Atelier-backend',
     describe:"This project involved a significant rebuild of the back-end server, utilizing micro-services architectures for improved scalability. \nEach engineer worked on their individual API. I designed and built the Questions & Answer API after completing an ETL process of 35+ million records of data from a legacy database to PostgreSQL. The deployment of the server with Docker and an NGINX load balancer and caching on AWS EC2 achieved horizontal scaling and a significant increase in RPS from 500 to 8000 while maintaining low latency and a 0% error rate, ensuring a high-quality user experience.",
     image:[['https://user-images.githubusercontent.com/86500068/212131181-19cc8137-84c1-4a7c-8478-72b9c9046252.png','Get qeustion result']],
-    tech:['NodeJS', 'Express', 'PostgreSQL', 'Docker', 'Nginx', 'Aws'],
+    tech:['NodeJS', 'Express', 'PostgreSQL', 'Docker', 'Nginx', 'Aws', 'jest'],
     bref:"A front-end e-commerse website",
     position:`Front-end Developer`
   },
@@ -34,7 +44,7 @@ const projects = [
       ["https://user-images.githubusercontent.com/86500068/224519967-77d6dc86-0f92-4650-8b68-9fe976128c1f.GIF", 'Ratings and Reviews filter and sorting'],
       ["https://user-images.githubusercontent.com/86500068/224519965-ac730134-c80e-451f-98c1-435b005b3aa4.GIF", 'A popup window to add a new review']],
 
-    tech: ['Javascript','React', 'Css3', 'Html5', 'NodeJS', 'Express', 'Aws'],
+    tech: ['Javascript','React', 'Css3', 'Html5', 'NodeJS', 'Express', 'Aws','jest'],
     bref: "A back-end server API",
     position:`Back-end Developer`
    },
@@ -54,11 +64,6 @@ const projects = [
     bref:"A MVP project created by myself",
     position:`Full-stack Developer`
    },
-  //  {
-  //   name: 'neway-receipt-project',
-  //   showName: 'Neway Inc Receipt Project',
-  //   image:[['./images/frontend-detail1.gif',""]],
-  //   tech: ['React', 'Bootstrap', 'Express', 'PostgreSQL', 'Docker']
-  //  }
+
 ];
 export default projects;

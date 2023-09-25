@@ -25,7 +25,6 @@ function MyNavbar() {
                 return (
                   <Nav.Link key={i} href={`#${btn}`}>{btn.toUpperCase()}</Nav.Link>
                 )
-
               })
             }
             <Nav.Link style={{textDecoration:'none'}}>

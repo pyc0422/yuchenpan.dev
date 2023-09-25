@@ -6,7 +6,18 @@ import reading from '../images/reading.png';
 import location from '../images/location.png'
 import './experience.css'
 function Experiences () {
-  const experiences = [{
+  const experiences = [
+    {
+      time: "Augest 2023 - Present",
+      title: "FreeLancer",
+      subTitle: "Freelance Full-stack Developer",
+      icon:developer,
+      detail:[
+        "Desgined and created websites for small bussinesses. Currently working on the offical website of a DC area Chinese chamber of commerce. ",
+        "Led client meetings and served as the primary point of contact, effectively communicating project progress, requirements, and updates, ensuring client satisfaction and alignment with their goals"
+      ]
+    },
+    {
     time:"March 2023 - July 2023",
     title:"Tech Industry",
     subTitle:"Software enigneering immersive resident",
@@ -23,7 +34,7 @@ function Experiences () {
       detail:"After self-teaching for 1 year, I finally joined the Hack Reactor coding bootcamp and spent 800 hours on coding."
     },
 
-  {time:"Aug 2018 - pesent",
+  {time:"Aug 2018 - Pesent",
   title:'Content Creater',
   subTitle:'Relocated to US',
   icon:location,

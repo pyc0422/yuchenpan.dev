@@ -1,15 +1,17 @@
 import { Button} from 'react-bootstrap';
 //import Footer from './Footer';
 import projects from './projects.js';
-import docker from '../images/docker.svg';
 import nginx from '../images/nginx.svg';
-import aws from '../images/aws.svg';
+import jest from '../images/jest-color.svg';
+import testing from '../images/testinglibrary-color.svg';
+import tsnode from '../images/tsnode-color.svg'
 import { useSearchParams } from 'react-router-dom';
 import './Home.css'
 const logo_img = {
-  "docker": docker,
   "nginx": nginx,
-  "aws": aws
+  "jest":jest,
+  "testing-library":testing,
+  "tsnode":tsnode
 };
 
 
@@ -18,8 +20,7 @@ function Project() {
   // console.log('i', params.get('id'))
   const project = projects[params.get('id') - 1];
   const github = `https://github.com/pyc0422/${project.name}`;
-  console.log(project.name);
-  const isBite = project.name === 'BiteShare';
+
   return (
     <div className="project">
       <h2 style={{textAlign:'center'}}>{project.showName || project.name}</h2>
@@ -30,38 +31,33 @@ function Project() {
         </span>
 
         {project.tech.map((n, i) =>{
-            let img_src;
-            if (n === 'Nginx') {
-              img_src = logo_img[n.toLowerCase()]
-            } else{
-              img_src=`https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/${n.toLowerCase()}-colored.svg`
-            }
+            let img_src = logo_img[n.toLowerCase()] || `https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/${n.toLowerCase()}-colored.svg`;
+            // if (n === 'Nginx') {
+            //   img_src = logo_img[n.toLowerCase()]
+            // } else{
+            //   img_src=`https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/${n.toLowerCase()}-colored.svg`
+            // }
             return (
-              <img src={img_src} width="25" height="25" alt={n} title={n} style={{marginLeft:'1%'}}/>
+              <img key={i} src={img_src} width="25" height="25" alt={n} title={n} style={{marginLeft:'1%'}}/>
             )
           })
         }
       </p>
-      <div style={isBite ? {width:'80%', margin:'auto',display:'flex', justifyContent:'center', flexWrap:'wrap'} : {display:'flex', flexDirection:'column'}}>
+      <div style={{width:'80%', margin:'auto',display:'flex', justifyContent:'center', flexWrap:'wrap'}}>
         {project.image.map((arr, i) =>
-          <div style={project.name === 'BiteShare' ? {flex:'50%', margin:'auto', display:'flex', justifyContent:'center'} : {margin:'auto'}}>
+          <div key={i} style={project.name === 'BiteShare' ? {flex:'50%', margin:'auto', display:'flex', justifyContent:'center'} : {margin:'auto'}}>
             <figure style={{display:'inline-block', padding:'5px', textAlign:'center'}}>
               <figcaption style={{fontFamily:'Lato', fontVariant:'small-caps'}}>{arr[1]}</figcaption>
-              <img key={i} style={isBite ? { aspectRatio:9/16} : {maxHeight:'100%', maxWidth:'100%', padding:'1%'}} src={arr[0]} alt={project.name + i}/>
+              {project.name === 'fetch-exercise' ? <video alt={project.name + i} src={arr[0]} autoPlay={true} />
+              :<img style={ {maxHeight:'100%', maxWidth:'100%', padding:'1%'}} src={arr[0]} alt={project.name + i}/>}
             </figure>
           </div>
         )}
       </div>
-
-
-
-        <div id="btn-group">
-          {project.deployed &&  <Button style={{backgroundColor:'orange', border:'none'}}href={project.deployed}>Try it Live</Button>}
-          <Button href={github} variant="info">Github</Button>
-        </div>
-
-
-
+      <div id="btn-group">
+        {project.deployed &&  <Button style={{backgroundColor:'orange', border:'none'}} href={project.deployed}>Try it Live</Button>}
+        <Button href={github} variant="info">Github</Button>
+      </div>
     </div>
   );
 }

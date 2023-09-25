@@ -23,7 +23,7 @@ function About () {
         <li> At 18, nurtured the seed of interet in coding by creating my personal blog using HTML and CSS</li>
         <li> 2 years of coding experience specializing in JavaScript, React, and Node.</li>
         <li> Fast Learner and Self-taught. Worked as a Teaching Assistent at a coding bootcamp where I graduated from.</li>
-        <li> Influencer with 75k followers on a social media platform.</li>
+        <li> Influencer with 75k followers on one social media platform.</li>
         <li> 7 years of experience in the banking industry, specializing in mortgage loans and personal banking.</li>
 
         <li> Passionate about baking and cooking. </li>
