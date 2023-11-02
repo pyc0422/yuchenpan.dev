@@ -3,10 +3,22 @@ import frontendCart from '../images/frontend-cart.gif';
 
 const projects = [
   {
+    name:'jc-frontend',
+    showName:'Job Compass',
+    bref:'A job application management website',
+    describe:'\tJob Compass aims to help job hunter manage their job applications. \n The users can add, edit, delete each job card. The website will automaticly get the company icon while the user creating the job card. By keep all the data in our database, the user can easily find the job description and other useful information for preparing the interview. \n In the future, I am going to add the analyse feature which will allows the users to get the multidimensional meta data and help them to find their best job huntr strategy',
+    position:'Full-stack Developer',
+    deployed:'https://jobcompass-frontend.web.app',
+    image:[
+      ["https://user-images.githubusercontent.com/86500068/280126381-28a81ac4-fc94-48d2-891a-0b9a63369c86.mov",'Demo Video']
+    ],
+    tech:['TypeScript', 'Vite','react','tailwindCSS', 'firebase']
+  },
+  {
     name: 'fetch-exercise',
     showName:'Dog Lover',
     bref: 'A frontend project dog adopt website for dog lovers',
-    dscribe:'\tDog Lover is a web application that allows users to adopt dogs from over 10000 dogs in our database. \n I built this website individually with TypeScript, Next.js, and TailwindCSS. \nSuccessfully processed 10,000-row API data with intricate filtering conditions for precise content presentation',
+    describe:'\tDog Lover is a web application that allows users to adopt dogs from over 10000 dogs in our database. \n I built this website individually with TypeScript, Next.js, and TailwindCSS. \nSuccessfully processed 10,000-row API data with intricate filtering conditions for precise content presentation',
     position:'Front-end Developer',
     deployed:'https://fetch-dog-lover.vercel.app/',
     image:[["https://github.com/pyc0422/fetch-exercise/assets/86500068/3c11ce2f-54a2-45f4-aff8-cbad6150c696", 'Demo Video']],

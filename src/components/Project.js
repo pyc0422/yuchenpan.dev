@@ -32,11 +32,6 @@ function Project() {
 
         {project.tech.map((n, i) =>{
             let img_src = logo_img[n.toLowerCase()] || `https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/${n.toLowerCase()}-colored.svg`;
-            // if (n === 'Nginx') {
-            //   img_src = logo_img[n.toLowerCase()]
-            // } else{
-            //   img_src=`https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/${n.toLowerCase()}-colored.svg`
-            // }
             return (
               <img key={i} src={img_src} width="25" height="25" alt={n} title={n} style={{marginLeft:'1%'}}/>
             )
@@ -48,7 +43,7 @@ function Project() {
           <div key={i} style={project.name === 'BiteShare' ? {flex:'50%', margin:'auto', display:'flex', justifyContent:'center'} : {margin:'auto'}}>
             <figure style={{display:'inline-block', padding:'5px', textAlign:'center'}}>
               <figcaption style={{fontFamily:'Lato', fontVariant:'small-caps'}}>{arr[1]}</figcaption>
-              {project.name === 'fetch-exercise' ? <video alt={project.name + i} src={arr[0]} autoPlay={true} />
+              {project.name === 'fetch-exercise' || 'jc-frontend' ? <video alt={project.name + i} src={arr[0]} autoPlay={true} />
               :<img style={ {maxHeight:'100%', maxWidth:'100%', padding:'1%'}} src={arr[0]} alt={project.name + i}/>}
             </figure>
           </div>

@@ -6,6 +6,7 @@ import frontend from '../images/frontend-demo.gif'
 import doglover from '../images/doglover.jpg'
 
 const bgImgs = {
+  'jc-frontend':'https://user-images.githubusercontent.com/86500068/280126929-5e06720c-ac67-47a1-8979-07ac684505e7.jpg',
   'BiteShare':biteshare,
   'Atelier-backend': backend,
   'Atelier-frontend':frontend,
