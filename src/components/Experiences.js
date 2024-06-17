@@ -8,7 +8,18 @@ import './experience.css'
 function Experiences () {
   const experiences = [
     {
-      time: "Augest 2023 - Present",
+      time: "January 2024 - May 2024",
+      title: "Tech industry",
+      subTitle: "Associate Software Engineer",
+      icon:developer,
+      detail:[
+        "Achieved 1st place among peers in completing the software engineering training course. \n",
+        "Received my first performance review with score of 3.5 out of 5, indicating above and beyond performance, with 4 being the threshold for promotion. \n",
+        "Real industry experience with Typescript, React, Next.js, GraphQL, Java, Jenkins and Jira in an Agile team."
+      ]
+    },
+    {
+      time: "Augest 2023 - December 2023",
       title: "FreeLancer",
       subTitle: "Freelance Full-stack Developer",
       icon:developer,

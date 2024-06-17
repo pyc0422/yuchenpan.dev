@@ -12,7 +12,7 @@ const projects = [
     image:[
       ["https://user-images.githubusercontent.com/86500068/280126381-28a81ac4-fc94-48d2-891a-0b9a63369c86.mov",'Demo Video']
     ],
-    tech:['TypeScript', 'Vite','react','tailwindCSS', 'firebase']
+    tech:['TypeScript', 'Vite','react','redux','tailwindCSS', 'tsnode','firebase']
   },
   {
     name: 'fetch-exercise',
