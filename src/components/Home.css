@@ -56,10 +56,6 @@
 #work-session {
   display:flex;
   flex-wrap: wrap;
-  /* justify-content: center;
-  align-items: center; */
-  /* grid-template-rows:1fr 1fr;
-  grid-template-columns: 1fr 1fr; */
 }
 .project-item {
   height:300px;
@@ -108,7 +104,7 @@ img:hover {
 }
 
 .project-img {
-  border-radius: 4%;
+  border-radius: 3rem;
   width: 200px;
   height: 200px;
   object-fit:cover;

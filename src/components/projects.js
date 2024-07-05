@@ -5,7 +5,7 @@ const projects = [
   {
     name:'jc-frontend',
     showName:'Job Compass',
-    bref:'A job application management website',
+    bref:'A job application management web application',
     describe:'\tJob Compass aims to help job hunter manage their job applications. \n The users can add, edit, delete each job card. The website will automaticly get the company icon while the user creating the job card. By keep all the data in our database, the user can easily find the job description and other useful information for preparing the interview. \n In the future, I am going to add the analyse feature which will allows the users to get the multidimensional meta data and help them to find their best job huntr strategy',
     position:'Full-stack Developer',
     deployed:'https://jobcompass-frontend.web.app',
@@ -42,7 +42,7 @@ const projects = [
     describe:"This project involved a significant rebuild of the back-end server, utilizing micro-services architectures for improved scalability. \nEach engineer worked on their individual API. I designed and built the Questions & Answer API after completing an ETL process of 35+ million records of data from a legacy database to PostgreSQL. The deployment of the server with Docker and an NGINX load balancer and caching on AWS EC2 achieved horizontal scaling and a significant increase in RPS from 500 to 8000 while maintaining low latency and a 0% error rate, ensuring a high-quality user experience.",
     image:[['https://user-images.githubusercontent.com/86500068/212131181-19cc8137-84c1-4a7c-8478-72b9c9046252.png','Get qeustion result']],
     tech:['NodeJS', 'Express', 'PostgreSQL', 'Docker', 'Nginx', 'Aws', 'jest'],
-    bref:"A front-end e-commerse website",
+    bref:"A back-end server API for an e-commerce website",
     position:`Front-end Developer`
   },
    {
@@ -57,7 +57,7 @@ const projects = [
       ["https://user-images.githubusercontent.com/86500068/224519965-ac730134-c80e-451f-98c1-435b005b3aa4.GIF", 'A popup window to add a new review']],
 
     tech: ['Javascript','React', 'Css3', 'Html5', 'NodeJS', 'Express', 'Aws','jest'],
-    bref: "A back-end server API",
+    bref: "A front-end e-commerse website",
     position:`Back-end Developer`
    },
    {
